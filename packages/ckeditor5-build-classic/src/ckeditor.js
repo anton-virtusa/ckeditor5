@@ -31,6 +31,7 @@ import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation';
 import CloudServices from '@ckeditor/ckeditor5-cloud-services/src/cloudservices';
 import SourceEditing from "@ckeditor/ckeditor5-source-editing/src/sourceediting";
+import Base64UploadAdapter from "@ckeditor/ckeditor5-upload/src/adapters/base64uploadadapter";
 
 export default class ClassicEditor extends ClassicEditorBase {}
 
@@ -60,7 +61,8 @@ ClassicEditor.builtinPlugins = [
 	Table,
 	TableToolbar,
 	TextTransformation,
-	SourceEditing
+	SourceEditing,
+	Base64UploadAdapter
 ];
 
 // Editor configuration.
