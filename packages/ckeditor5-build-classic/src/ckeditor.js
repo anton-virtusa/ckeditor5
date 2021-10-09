@@ -33,6 +33,7 @@ import CloudServices from '@ckeditor/ckeditor5-cloud-services/src/cloudservices'
 import SourceEditing from "@ckeditor/ckeditor5-source-editing/src/sourceediting";
 import Base64UploadAdapter from "@ckeditor/ckeditor5-upload/src/adapters/base64uploadadapter";
 import GeneralHtmlSupport from '@ckeditor/ckeditor5-html-support/src/generalhtmlsupport';
+import HtmlEmbed from '@ckeditor/ckeditor5-html-embed/src/htmlembed';
 
 export default class ClassicEditor extends ClassicEditorBase {}
 
@@ -64,7 +65,8 @@ ClassicEditor.builtinPlugins = [
 	TextTransformation,
 	SourceEditing,
 	Base64UploadAdapter,
-	GeneralHtmlSupport
+	GeneralHtmlSupport,
+	HtmlEmbed
 ];
 
 // Editor configuration.
@@ -89,7 +91,8 @@ ClassicEditor.defaultConfig = {
 			'undo',
 			'redo',
 			'|',
-			'sourceEditing'
+			'sourceEditing',
+			'htmlEmbed'
 		]
 	},
 	image: {
